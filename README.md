@@ -9,3 +9,17 @@ reference link
     
   - nvidia container toolkit
     : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
+  
+  - docker shared mem 늘리는 법
+    : --shm-size=8G
+    
+  - GPU 모두 사용
+    : --gpus all
+    
+  - 메모리 문제 해결
+    : --ipc=host
+  
+  ----------------------------------------
+  docker run -it --gpus all --shm-size=8G --ipc=host -p 6006:6006 --name torch_ex2 pytorch/pytorch:1.10.0-cuda11.3-cudnn8-devel /bin/bash
+    
+    
