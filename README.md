@@ -24,5 +24,7 @@ reference link
   
   docker run -it --gpus all --mount type=bind,source=/home/haksoo/Project/2023/EXACODE/_docker_mounted,target=/workspace/LocalMounted --name cd_pet rishubi/codegeex:latest /bin/bash
 
+  docker run -it --gpus all --mount type=bind,source=/home,target=/host --name haksoo_exacode3  /bin/bash
+
     
     
